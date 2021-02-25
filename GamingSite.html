@@ -5,35 +5,58 @@
 
     body {
 
-    background-color: rgb(70, 30, 64);
+    background-color: rgb(70, 30, 64, 0.95);
     text-align:center;
     }
 
+    h1 {
+      font-size: 45px;
+    }
 
     #header-color {
-
-    color:rgb(202, 151, 88);
+      padding: 10px;
+      color:rgb(202, 151, 88);
 
     }
 
-
+    #shadow {
+      box-shadow: 0 10px 20px sandybrown;
+    }
 
     p {
+    text-align: justify;
     color: rgb(206, 206, 211);
+    line-height: 25px;
     }
 
 
     ol {
     color:rgb(206, 206, 211);
     margin: auto;
+    padding-bottom: 40px;
+    line-height: 25px;
+  
+    }
+
+    .content {
+      position: relative;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: auto;
+      padding: 10px 30px 10px 30px;
+      text-align: center;
     }
 
 
 .round-border {
+  
     border-radius:80%;
     position: relative;
     margin: auto;
     display: block;
+    image-resolution: auto;
+    resize:both;
 }
 
 footer {
@@ -226,14 +249,7 @@ footer {
     border-radius: 50%;
   }
 
-  .beak-bottom {
-    top: 65%;
-    left: 42%;
-    background: var(--penguin-beak, orange);
-    width: 16%;
-    height: 10%;
-    border-radius: 50%;
-  }
+  
 
   .penguin * {
     position: absolute;
@@ -247,30 +263,35 @@ footer {
 
 <head> 
 <h1 id="header-color"> 
-New Page Testing
+<u>Hesser's Tavern</u>
 </h1>
 
 <body> 
 
 <div>
-
+<a href="https://www.twitch.tv/hessertavern">
 <img class="round-border" src="https://images.yourstory.com/cs/2/f02aced0d86311e98e0865c1f0fe59a2/online-gaming-1595435856946.png?fm=png&auto=format&ar=2:1&mode=crop&crop=face">
-
+</a>
 <h2 id="header-color">
 This will be a gaming website with possible meta snapshots or tutorials
 </h2>
+
+<hr color=white>
+
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 </p>
 
-
-<h3 id="header-color">Contents:</h3>
+<div class="content" id="shadow">
+<h3 id="header-color"><u>Contents</u>:</h3>
 <ol>
 <li>TFT and LoL-related content</li>
 <li>Gwent and other card games</li>
 <li>Single player games</li>
 </ol> 
 
+
+  </div>
 </div>
 
 
@@ -303,7 +324,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <footer>
 
-Made by Kamil Arcimowicz® 2021
+<u>Made by Kamil Arcimowicz® 2021</u>
 
 </footer>
 
